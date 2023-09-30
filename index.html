@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>module 4-solution</title>
+</head>
+<body>
+  <script>// Define an array of names
+    var names = ["John", "Jane", "Bob", "Alice", "Jim"];
+    
+    // Loop over the array
+    for (var i = 0; i < names.length; i++) {
+      // Get the current name
+      var currentName = names[i];
+    
+      // Get the first letter of the current name and convert it to uppercase
+      var firstLetter = currentName.charAt(0).toUpperCase();
+    
+      // Check if the first letter is 'J'
+      if (firstLetter === 'J') {
+        // If it is, print "Goodbye" followed by the name
+        console.log("Goodbye " + currentName);
+      } else {
+        // If it's any other letter, print "Hello" followed by the name
+        console.log("Hello " + currentName);
+      }
+    }
+    
+    </script>
+</body>
+</html>
