@@ -14,26 +14,18 @@
 </head>
 <body>
   <h3>Check in the console</h3>
-  <script>// Define an array of names
-    var names = ["John", "Jane", "Bob", "Alice", "Jim"];
-    
-    // Loop over the array
-    for (var i = 0; i < names.length; i++) {
-      // Get the current name
-      var currentName = names[i];
-    
-      // Get the first letter of the current name and convert it to uppercase
-      var firstLetter = currentName.charAt(0).toUpperCase();
-    
-      // Check if the first letter is 'J'
-      if (firstLetter === 'J') {
-        // If it is, print "Goodbye" followed by the name
-        console.log("Goodbye " + currentName);
-      } else {
-        // If it's any other letter, print "Hello" followed by the name
-        console.log("Hello " + currentName);
-      }
-    }
+  <script>
+    const names = ["John", "Jane", "Jim", "Sarah", "Jack"];
+
+names.forEach(function(name) {
+  // Check if the name starts with 'J' or 'j'
+  if (name.charAt(0) === 'J' || name.charAt(0) === 'j') {
+    console.log(`Goodbye ${name}`);
+  } else {
+    console.log(`Hello ${name}`);
+  }
+});
+
     
     </script>
 </body>
